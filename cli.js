@@ -21,6 +21,6 @@ if (command === "list") {
 }
 
 function runListCommand() {
-  // Replace this with your implementation
   console.log("Called the list command");
+  members.forEach(({ firstName, jobTitle }) => console.log(`${firstName} is working as a ${jobTitle} and their slack handle is ${userSlack}`))
 }
